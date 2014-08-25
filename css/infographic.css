@@ -1,0 +1,363 @@
+/* Infographic Timeline CSS
+By Neil McWilliam
+Developed for Qimple.com */
+
+/* html */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* Body */
+body{
+	max-width: 100%;
+}
+
+p {
+	font-size: 12px;
+}
+
+/* Link Settings */
+a:link {
+  color: #d0473d;
+  text-decoration: none;
+}
+a:visited {
+  color: #d0473d;
+  text-decoration: none;
+}
+a:hover{
+  color: #de5e54;
+  text-decoration: none;
+}
+a:active {
+  color: #d0473d;
+  text-decoration: none;
+}
+
+/* Button Colours */
+a.btn:link { color: #333; }
+a.btn:visited { color: #333; }
+a.btn:hover { color: #333; }
+a.btn:active { color: #333; }
+a.btn-danger:link { color: #fff; }
+a.btn-danger:visited { color: #fff; }
+a.btn-danger:hover { color: #fff; }
+a.btn-danger:active { color: #fff; }
+a.btn-primary:link { color: #fff; }
+a.btn-primary:visited { color: #fff; }
+a.btn-primary:hover { color: #fff; }
+a.btn-primary:active { color: #fff; }
+
+/* Containers */
+.containerDarkGrey{
+  background-color: #101820;
+  margin: 0;
+  color: #FFF;
+  padding: 60px 35px 68px 35px;
+}
+.containerWhite {
+  background-color: #FFF;
+  margin: 0;
+  padding: 60px 35px 68px 35px;
+}
+.containerBlack {
+  background-color: #000;
+  margin: 0;
+  color: #FFF;
+  padding: 60px 35px 68px 35px;
+}
+.containerRed {
+  background-color: #FF5943;
+  margin: 0;
+  padding: 60px 35px 68px 35px;
+}
+.containerLightYellow {
+  background-color: #F7F8F3;
+  margin: 0;
+  padding: 60px 35px 68px 35px;
+}
+.containerOlive{
+  background-color: #DBDECF;
+  margin: 0;
+  padding: 60px 35px 68px 35px;
+}
+
+/* Year Box */
+.yearBox{
+	background-color: #525252;
+	border: 1px solid #656565;
+	color: #f2f2f2;
+	padding: 10px;
+	font-size: 12px;
+}
+
+/* Infographic colors */
+.color1{ /*red*/
+	background-color: #d36162;
+}
+.color2{ /*blue*/
+	background-color: #60a1d2;
+}
+.color3{ /*green*/
+	background-color: #62d394;
+}
+.color4{ /*purple*/
+	background-color: #c55fd2;
+}
+.color5{ /*yellow*/
+	background-color: #dec148;
+}
+.color6{ /*red*/
+	background-color: #d36162;
+}
+.color7{ /*blue*/
+	background-color: #60a1d2;
+}
+.color8{ /*green*/
+	background-color: #62d394;
+}
+.color9{ /*purple*/
+	background-color: #c55fd2;
+}
+.color10{ /*yellow*/
+	background-color: #dec148;
+}
+
+/* Infographic transparency */
+.transparency{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";       /* IE 8 */
+	filter: alpha(opacity=75);  /* IE 5-7 */
+	-moz-opacity: 0.75;          /* Netscape */
+	-khtml-opacity: 0.75;        /* Safari 1.x */
+	opacity: 0.75;               /* Good browsers */
+}
+
+/* Timeline Style */
+.timelineStyle{
+	border:none;
+	padding:0;
+	margin:0;
+	z-index: 2000;
+}
+
+/* Month div left padding
+#paddingLeftJan{
+	padding-left: 0.1em;
+}
+#paddingLeftFeb{
+	padding-left: 0.2em;
+}
+#paddingLeftMar{
+	padding-left: 0.3em;
+}
+#paddingLeftApr{
+	padding-left: 0.4em;
+}
+#paddingLeftMay{
+	padding-left: 0.5em;
+}
+#paddingLeftJun{
+	padding-left: 0.6em;
+}
+#paddingLeftJul{
+	padding-left: 0.7em;
+}
+#paddingLeftAug{
+	padding-left: 0.8em;
+}
+#paddingLeftSep{
+	padding-left: 0.9em;
+}
+#paddingLeftOct{
+	padding-left: 1.0em;
+}
+#paddingLeftNov{
+	padding-left: 1.1em;
+}
+#paddingLeftDec{
+	padding-left: 1.2em;
+} */
+
+/* Month div right padding
+#paddingRightJan{
+	padding-right: 0.1em;
+}
+#paddingRightFeb{
+	padding-right: 0.2em;
+}
+#paddingRightMar{
+	padding-right: 0.3em;
+}
+#paddingRightApr{
+	padding-right: 0.4em;
+}
+#paddingRightMay{
+	padding-right: 0.5em;
+}
+#paddingRightJun{
+	padding-right: 0.6em;
+}
+#paddingRightJul{
+	padding-right: 0.7em;
+}
+#paddingRightAug{
+	padding-right: 0.8em;
+}
+#paddingRightSep{
+	padding-right: 0.9em;
+}
+#paddingRightOct{
+	padding-right: 1.0em;
+}
+#paddingRightNov{
+	padding-right: 1.1em;
+}
+#paddingRightDec{
+	padding-right: 1.2em;
+} */
+
+
+/* Experience Infographic block */
+.containerInfographic{
+	position:absolute; 
+	bottom: 0px;
+	height: 40px;
+	padding: 0;
+	margin:0;
+}
+.infographicBlock{
+	position: relative;
+	margin-top: -10px;
+	height: 40px;
+	padding: 0;
+	margin:0;
+}
+.infographicText{
+	position: relative; 
+	top: -115px;
+	width: 200px;
+	text-align: left; 
+	color: #000;
+	background-color: #FFF;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	border-left: 1px solid #333;
+}
+
+/* Education Infographic block */
+.containerInfographic2{
+	position: absolute; 
+	top: 0px;
+	height: 40px;
+	padding: 0;
+	margin:0;
+}
+.infographicBlock2{
+	position: relative;
+	margin-top: 0px;
+	border-bottom-left-radius: 150px 10px;
+	border-bottom-right-radius: 150px 10px;
+	height: 40px;
+	padding: 0;
+	margin:0;
+}
+.infographicText2{
+	position: relative; 
+	top: 50px;
+	width: 200px;
+	text-align: left; 
+	color: #000;
+	background-color: #FFF;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	border-left: 1px solid #333;
+}
+
+/* Titles for Experience */
+.titleExperience{
+	color: #b3b9bb;
+	font-size: 12px;
+	margin-top: -9px;
+	font-weight: bold;
+}
+.titleStyling {
+	background-color: #FFF;
+	padding: 0 15px 0 15px;
+}
+
+/* Titles for Educations */
+.titleEducation{
+	color: #b3b9bb;
+	font-size: 12px;
+	margin-bottom: -9px;
+	font-weight: bold;
+}
+.titleStyling2 {
+	background-color: #FFF;
+	padding: 0 15px 0 15px;
+	position: relative;
+	top: 190px;
+}
+
+/* Box Formatting */
+.experienceBox{
+	border-top: 2px solid #eaedec;
+	border-left: 2px solid #eaedec;
+	border-right: 2px solid #eaedec;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	min-height: 200px;
+	padding-left: 0;
+	padding-right: 0;
+	/*overflow-x: hidden;*/
+}
+.educationBox{
+	border-bottom: 2px solid #eaedec;
+	border-left: 2px solid #eaedec;
+	border-right: 2px solid #eaedec;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	min-height: 200px;
+	padding-left: 0;
+	padding-right: 0;
+	/*overflow-x: hidden;*/
+}
+
+/* Styling location text */
+.locationText{
+	color: #b4b5b4;
+}
+
+#footer{
+	text-align: center;
+	padding-top: 40px;
+}
+
+/* MAIN RESOLUTIONS */
+/* ---------------------------------------- */
+
+/* Greater than 1200px */
+@media (min-width: 1200px){
+
+}
+
+/* ---------------------------------------- */
+/* Between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* ---------------------------------------- */
+/* Between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* ---------------------------------------- */
+/* Less than 767px */
+@media (max-width: 767px){
+	
+}
